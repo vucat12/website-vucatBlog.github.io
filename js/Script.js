@@ -38,3 +38,39 @@ $(document).ready(function () {
     divs.eq(now).show(); // show previous
   });
 });
+
+// slide pre,1,2,3,next
+$(document).ready(function () {
+  $("#button-next").click(function () {
+    if (window.location.pathname == "/firstCode/FirstBlog/index.html") {
+      $(".button-next").attr("href", "/firstCode/FirstBlog/content1.html");
+    }
+    else {
+      if (window.location.pathname == "/firstCode/FirstBlog/content1.html") {
+        $(".button-next").attr("href", "/firstCode/FirstBlog/content2.html");
+      }
+      else {
+        if (window.location.pathname == "/firstCode/FirstBlog/content2.html") {
+          $(".button-next").attr("href", "/firstCode/FirstBlog/index.html");
+        }
+      }
+    }
+  });
+});
+$(document).ready(function () {
+  $("#button-previous").click(function () {
+    if (window.location.pathname == "/firstCode/FirstBlog/index.html") {
+      $(".button-previous").attr("href", "/firstCode/FirstBlog/content2.html");
+    }
+    else {
+      if (window.location.pathname == "/firstCode/FirstBlog/content2.html") {
+        $(".button-previous").attr("href", "/firstCode/FirstBlog/content1.html");
+      }
+      else {
+        if (window.location.pathname == "/firstCode/FirstBlog/content1.html") {
+          $(".button-previous").attr("href", "/firstCode/FirstBlog/index.html");
+        }
+      }
+    }
+  });
+});

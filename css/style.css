@@ -41,7 +41,9 @@
 #myTable{
   font-family: 'Merriweather', serif;
   font-size: medium;
+  position: relative;
 }
+
 /* background */
 .col-sm-12{
   padding-left: 0px !important;
@@ -164,6 +166,10 @@
   height: 1px;
   max-width: 45px;
   margin: 0 auto;
+}
+
+.button-slide{
+  position: relative;
 }
 
 /* footer of content */

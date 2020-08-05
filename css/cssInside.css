@@ -219,6 +219,10 @@ h3{
   background: #00a9ff;
   color: #ffffff; 
 }
+
+.col-sm-4{
+  margin-top: 15px;
+}
 /* Post - footer */
 .thank-you{
   text-align: center;
